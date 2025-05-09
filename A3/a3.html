@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <div>Galeria de Imagens Acessível</div>
-    </div>
-    <div>
-        <div class="gallery">
-            <div>
-                <img src="imagem1.jpg">
-                <div>Descrição</div>
-            </div>
-            <div>
-                <img src="imagem2.jpg">
-                <div>Descrição</div>
-            </div>
-            <div>
-                <img src="imagem3.jpg">
-                <div>Descrição</div>
-            </div>
-            <div>
-                <img src="imagem4.jpg">
-                <div>Descrição</div>
-            </div>
+    
+    <header>
+        <h1>Galeria de Imagens Acessível</h1>
+        <button class="contraste" tabindex="0" aria-label="Ativar alto contraste">Ativar alto contraste</button>
+    </header>
+
+    <main id="main-content">
+        <div class="gallery" role="region" aria-label="Galeria de imagens">
+            <section tabindex="0">
+                <img src="imagem1.jpg" alt="Duas amigas celebrando a vitória">
+                <p>Duas amigas celebrando a vitória</p>
+            </section>
+            <section tabindex="0">
+                <img src="imagem2.jpg" alt="Filhotes na grama">
+                <p>Filhotes na grama</p>
+            </section>
+            <section tabindex="0">
+                <img src="imagem3.jpg" alt="Um barco sobre água calma">
+                <p>Um barco sobre água calma</p>
+            </section>
+            <section tabindex="0">
+                <img src="imagem4.jpg" alt="café da manhã na cama">
+                <p>café da manhã na cama</p>
+            </section>
         </div>
-    </div>
-    <div>
-        <div>Desenvolvido para fins educacionais</div>
-    </div>
+    </main>
+
+    <p class="lorem" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolor, possimus asperiores
+        accusamus nam perferendis accusantium temporibus incidunt alias assumenda ratione officia numquam rem cum. Error
+        quod corrupti atque quisquam?</p>
+
+    <footer>
+        <p tabindex="0">Desenvolvido para fins educacionais</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

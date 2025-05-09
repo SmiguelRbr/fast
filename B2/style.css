@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  div {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: url('after.jpg') center/cover no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="range"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    width: 100%;
+    z-index: 10;
+    display: none;
+  }
+  img[src="before.jpg"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+    transition: clip-path 0.1s;
+    pointer-events: none;
+    clip-path: inset(0 50% 0 0);
+  }
+  img[src="splitter.svg"] {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    z-index: 5;
+    cursor: ew-resize;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+    transition: left 0.1s;
+  }
