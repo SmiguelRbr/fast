@@ -99,7 +99,7 @@ footer {
 
 .gallery section:hover img {
     transform: scaleX(0.667);
-    /* This counteracts the section scaling (1/1.5) */
+    
 }
 
 .gallery section:hover p {

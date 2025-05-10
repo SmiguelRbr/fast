@@ -4,7 +4,7 @@ document.querySelector('.contraste').addEventListener('click', function () {
     contrasteAtivo = !contrasteAtivo;
     
     if (contrasteAtivo) {
-        // Alto contraste
+        // Alto contraste ez demais ze
         this.style.backgroundColor = 'yellow';
         this.style.color = 'black';
         document.body.style.backgroundColor = 'black';
